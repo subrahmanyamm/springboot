@@ -34,7 +34,7 @@ public class StudentController {
 
 	@GetMapping("/first")
 	public String helloTest() {
-		return "Spring boot application Test";
+		return "Spring boot application First API";
 	}
 
 	@GetMapping("/students")
