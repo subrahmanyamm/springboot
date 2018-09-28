@@ -24,7 +24,7 @@ public class StudentController {
 
 	@GetMapping("/students/{studentId}/courses")
 	public List<Course> retrieveCoursesForStudent(@PathVariable String studentId) {
-		System.out.println("for testing purpose ");
+		System.out.println("for testing purpose and doing changes ");
 		return studentService.retrieveCourses(studentId);
 	}
 
@@ -66,6 +66,7 @@ public class StudentController {
 				.toUri();
 		System.out.println(location+" location");
 		System.out.println(ResponseEntity.created(location).build());
+		System.out.println("end line ");
 		return ResponseEntity.created(location).build();
 	}
 
