@@ -63,7 +63,7 @@ public class StudentController {
 
 		URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(course.getId())
 				.toUri();
-		System.out.println(location);
+		System.out.println(location+" location");
 		System.out.println(ResponseEntity.created(location).build());
 		return ResponseEntity.created(location).build();
 	}
