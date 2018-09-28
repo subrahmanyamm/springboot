@@ -83,6 +83,7 @@ public class StudentService {
 	private SecureRandom random = new SecureRandom();
 
 	public Course addCourse(String studentId, Course course) {
+		System.out.println("In Add Course fucntion");
 		Student student = retrieveStudent(studentId);
 
 		if (student == null) {
