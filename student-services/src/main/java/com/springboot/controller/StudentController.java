@@ -56,7 +56,7 @@ public class StudentController {
 	public ResponseEntity<Void> registerStudentForCourse(@PathVariable String studentId,
 			@RequestBody Course newCourse) {
 		System.out.println("In Post ");
-		Course course = studentService.addCourse(studentId, newCourse);
+		Course course = studentService.addCourse(studentId, newCourse+" testing");
 		System.out.println(course);
 		if (course == null)
 			return ResponseEntity.noContent().build();
