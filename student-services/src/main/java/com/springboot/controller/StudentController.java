@@ -24,6 +24,7 @@ public class StudentController {
 
 	@GetMapping("/students/{studentId}/courses")
 	public List<Course> retrieveCoursesForStudent(@PathVariable String studentId) {
+		System.out.println("for testing purpose and doing changes ");
 		return studentService.retrieveCourses(studentId);
 	}
 
@@ -56,7 +57,7 @@ public class StudentController {
 	public ResponseEntity<Void> registerStudentForCourse(@PathVariable String studentId,
 			@RequestBody Course newCourse) {
 		System.out.println("In Post ");
-		Course course = studentService.addCourse(studentId, newCourse);
+		Course course = studentService.addCourse(studentId, newCourse+" testing");
 		System.out.println(course);
 		if (course == null)
 			return ResponseEntity.noContent().build();
@@ -65,6 +66,7 @@ public class StudentController {
 				.toUri();
 		System.out.println(location+" location");
 		System.out.println(ResponseEntity.created(location).build());
+		System.out.println("end line of line");
 		return ResponseEntity.created(location).build();
 	}
 
