@@ -9,9 +9,5 @@ public class StudentServicesApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(StudentServicesApplication.class, args);
 		System.out.println("Hello I am testing the application");
-		System.out.println("Hello I am testing GIT example....");
-		System.out.println("Hello I am testing GIT example111....");
-		System.out.println("Hello I am testing GIT example112 from SM_test_branch....");
-		System.out.println("Hello I am testing GIT example113 from SM_test_branch....");
-	}
+		}
 }
