@@ -10,5 +10,6 @@ public class StudentServicesApplication {
 		SpringApplication.run(StudentServicesApplication.class, args);
 		System.out.println("Hello I am testing the application");
 		System.out.println("Hello I am in GIT Session.....");
+		System.out.println("Hello I am in GIT Session after first commit.....");
 		}
 }
